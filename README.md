@@ -15,3 +15,11 @@ This library is designed to find all files with the same path that were changed 
 ### Testing
 
 The library includes tests to ensure the correctness of the implemented functionalities. Make sure to run the tests using `mvn test`.
+### Disclaimer for testing
+If `mvn test` doesn't work or outputs an error try changing these lines:
+```xml
+    <maven.compiler.source>23</maven.compiler.source>
+    <maven.compiler.source>23</maven.compiler.source>
+```
+so that they use a different version, if you dont have jdk 23.
+
